@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.fancyz-wheel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fancyz-wheel {
+    width: 300px;
+    height: 300px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.fancyz-segment {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: 0% 100%;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    border: 1px solid #ccc;
+}
+
+.fancyz-segment:nth-child(2) { transform: rotate(-20deg); background: red; }
+.fancyz-segment:nth-child(3) { transform: rotate(60deg);  background: blue;}
+.fancyz-segment:nth-child(4) { transform: rotate(120deg);background-color:yellow ; }
+.fancyz-segment:nth-child(5) { transform: rotate(180deg); background: orange;}
+.fancyz-segment:nth-child(6) { transform: rotate(240deg); background: antiquewhite;}
+.fancyz-segment:nth-child(7) { transform: rotate(300deg); background: aquamarine;}
+
+.fancyz-spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.fancyz-spin-button:hover {
+    background-color: #555;
+}
